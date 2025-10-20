@@ -10,10 +10,16 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Gabriel Gentil - Professional Resume',
+  title: 'Gabriel Gentil',
   description:
     'Professional resume and portfolio of Gabriel Gentil - Software Developer',
   keywords: ['developer', 'portfolio', 'resume', 'Gabriel Gentil'],
+  openGraph: {
+    title: 'Gabriel Gentil',
+    description: 'Professional resume and portfolio of Gabriel Gentil - Software Developer',
+    images: ['/apple-touch-icon.png'],
+    type: 'website',
+  },
 }
 
 export default function RootLayout({

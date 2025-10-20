@@ -1,9 +1,0 @@
-Para adicionar sua foto:
-
-1. Coloque sua foto neste diretório com o nome: profile.jpg
-2. Formatos recomendados: JPG, PNG ou WEBP
-3. Tamanho recomendado: mínimo 800x800px (quadrada)
-4. A imagem será otimizada automaticamente pelo Next.js
-
-Caminho: /public/images/profile.jpg
-
