@@ -1,4 +1,4 @@
-# Gabriel Site - Professional Resume
+# Gentil Site - Professional Resume
 
 Landing page moderna e responsiva desenvolvida com Next.js 14, React e TailwindCSS para apresentar currículo profissional. O site possui suporte completo para **internacionalização (i18n)** com alternância entre português e inglês.
 
