@@ -1,20 +1,28 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Section from '@/components/ui/Section'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function About() {
+  const { t } = useLanguage()
+
   return (
-    <Section id="about" title="Sobre Mim" bgColor="bg-background">
+    <Section id="about" title={t.about.title} bgColor="bg-background">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-slide-up">
           <p className="text-lg text-secondary-300 mb-4 font-mono">
-            Sou <span className="text-[#4ca6ff] font-semibold">Engenheiro de Software</span>, nascido em São Paulo, com 8 anos de experiência e apaixonado por tecnologia, esportes e desafios.
+            {t.about.paragraph1.split(t.about.engineerHighlight)[0]}
+            <span className="text-[#4ca6ff] font-semibold">{t.about.engineerHighlight}</span>
+            {t.about.paragraph1.split(t.about.engineerHighlight)[1]}
           </p>
           <p className="text-lg text-secondary-300 mb-4 font-mono">
-            Gosto de estar em movimento, seja resolvendo um problema complexo no código ou superando um novo limite fora dele.
+            {t.about.paragraph2}
           </p>
           <p className="text-lg text-secondary-300 font-mono">
-            <span className="text-[#4ca6ff] font-semibold">Otimista por natureza</span>, acredito que cada desafio é uma oportunidade de evoluir e que o aprendizado está na jornada, não só no resultado.
+            <span className="text-[#4ca6ff] font-semibold">{t.about.optimistHighlight}</span>
+            {t.about.paragraph3.split(t.about.optimistHighlight)[1]}
           </p>
         </div>
         <div className="flex justify-center animate-slide-up">

@@ -1,13 +1,22 @@
+'use client'
+
 import React from 'react'
 import Section from '@/components/ui/Section'
+import LanguageToggle from '@/components/LanguageToggle'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Hero() {
+  const { t } = useLanguage()
+
   return (
     <Section
       id="hero"
       className="min-h-screen flex items-center justify-center relative"
       bgColor="bg-gradient-to-br from-background via-background to-secondary-900/30"
     >
+      {/* Language Toggle */}
+      <LanguageToggle />
+
       {/* LinkedIn Icon */}
       <a
         href="https://www.linkedin.com/in/gabrielsantosgentil"
@@ -28,15 +37,15 @@ export default function Hero() {
 
       <div className="text-center animate-fade-in max-w-2xl mx-auto px-4">
         <p className="text-xl sm:text-2xl text-secondary-300 mb-4 font-mono">
-          Oi! Eu sou o
+          {t.hero.greeting}
         </p>
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 font-mono flex items-center justify-center">
           <span className="inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary-500 pr-1 animate-typing">
-            Gabriel Gentil
+            {t.hero.name}
           </span>
         </h1>
         <p className="text-lg sm:text-xl text-secondary-300 font-mono">
-          Construindo, aprendendo e empreendendo — ajudando pessoas com tecnologia e <span className="text-[#4ca6ff] font-semibold">propósito</span>. 👊🏾
+          {t.hero.description} <span className="text-[#4ca6ff] font-semibold">{t.hero.purpose}</span>. {t.hero.descriptionEnd}
         </p>
       </div>
     </Section>
