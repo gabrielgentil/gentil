@@ -144,7 +144,7 @@ Este projeto é de uso pessoal.
 
 **Gabriel Gentil**
 
-- LinkedIn: [linkedin.com/in/gabrielsantosgentil](www.linkedin.com/in/gabrielsantosgentil)
+- LinkedIn: [linkedin.com/in/gabrielsantosgentil](https://linkedin.com/in/gabrielsantosgentil)
 
 ---
 
