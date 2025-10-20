@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <Section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative pt-24 pb-12 sm:pt-20 sm:pb-12"
       bgColor="bg-gradient-to-br from-background via-background to-secondary-900/30"
     >
       {/* Language Toggle */}
@@ -22,11 +22,11 @@ export default function Hero() {
         href="https://www.linkedin.com/in/gabrielsantosgentil"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-8 left-1/2 -translate-x-1/2 text-secondary-400 hover:text-primary-400 transition-colors duration-300"
+        className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 text-secondary-400 hover:text-primary-400 transition-colors duration-300 z-10"
         aria-label="LinkedIn"
       >
         <svg
-          className="w-8 h-8"
+          className="w-7 h-7 sm:w-8 sm:h-8"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -35,16 +35,16 @@ export default function Hero() {
         </svg>
       </a>
 
-      <div className="text-center animate-fade-in max-w-2xl mx-auto px-4">
-        <p className="text-xl sm:text-2xl text-secondary-300 mb-4 font-mono">
+      <div className="text-center animate-fade-in max-w-2xl mx-auto px-6 sm:px-8 w-full overflow-x-hidden">
+        <p className="text-lg sm:text-xl md:text-2xl text-secondary-300 mb-4 font-mono">
           {t.hero.greeting}
         </p>
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 font-mono flex items-center justify-center">
-          <span className="inline-block overflow-hidden whitespace-nowrap border-r-4 border-primary-500 pr-1 animate-typing">
+        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-mono flex items-center justify-center">
+              <span className="inline-block whitespace-nowrap border-r-4 border-primary-500 pr-1 overflow-hidden max-w-full animate-typing-mobile sm:animate-typing">
             {t.hero.name}
           </span>
         </h1>
-        <p className="text-lg sm:text-xl text-secondary-300 font-mono">
+        <p className="text-base sm:text-lg md:text-xl text-secondary-300 font-mono leading-relaxed">
           {t.hero.description} <span className="text-[#4ca6ff] font-semibold">{t.hero.purpose}</span>. {t.hero.descriptionEnd}
         </p>
       </div>

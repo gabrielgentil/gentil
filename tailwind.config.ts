@@ -46,6 +46,7 @@ const config: Config = {
         'slide-up': 'slideUp 0.6s ease-out',
         'cursor-blink': 'cursorBlink 1s ease-in-out infinite',
         'typing': 'typing 2s steps(15, end) 0.5s forwards, blink-border 1s step-end 2.5s infinite',
+        'typing-mobile': 'typing 2s steps(15, end) 0.5s forwards, allow-wrap 0s 2.5s forwards, blink-border 1s step-end 2.5s infinite',
         'blink-border': 'blink-border 1s step-end infinite',
       },
       keyframes: {
@@ -64,6 +65,10 @@ const config: Config = {
         typing: {
           '0%': { width: '0' },
           '100%': { width: '100%' },
+        },
+        'allow-wrap': {
+          '0%': { whiteSpace: 'nowrap' },
+          '100%': { whiteSpace: 'normal' },
         },
         'blink-border': {
           '0%, 100%': { borderColor: 'transparent' },
