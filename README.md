@@ -144,9 +144,7 @@ Este projeto é de uso pessoal.
 
 **Gabriel Gentil**
 
-- Email: gabriel@example.com
-- LinkedIn: [linkedin.com/in/gabrielgentil](https://linkedin.com/in/gabrielgentil)
-- GitHub: [github.com/gabrielgentil](https://github.com/gabrielgentil)
+- LinkedIn: [linkedin.com/in/gabrielsantosgentil](www.linkedin.com/in/gabrielsantosgentil)
 
 ---
 
